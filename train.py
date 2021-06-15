@@ -113,7 +113,7 @@ model.compile(optimizer=opt, loss='categorical_crossentropy', metrics=['acc'])
 
 
 
-plot_model(model, to_file='audio2phoneme_model.png', show_shapes=True, show_layer_names=True)
+plot_model(model, to_file='audio2viseme_model.png', show_shapes=True, show_layer_names=True)
 
 model.fit(trainX, trainy,
           validation_data=(testX, testy),
