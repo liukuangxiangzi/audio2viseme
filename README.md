@@ -1,5 +1,5 @@
-# audio2phoneme
-The code generate phoneme from audio features.
+# audio2viseme
+The code generate viseme from audio features.
 
 ## Installation
 
@@ -35,14 +35,14 @@ The training code has the following arguments:
 
 * -x --- Input audio feature file for training
 * -X --- Input audio feature file for testing
-* -y --- Input phoneme file for training
-* -Y --- Input phoneme file for testing
+* -y --- Input viseme file for training
+* -Y --- Input viseme file for testing
 * -o --- Output folder path to save the model
 
 Usage:
 
 ```
-python train.py -x path-to-training-audio-feature-file, -X path-to-testing-audio-feature-file, -y path-to-training-phoneme-file -Y path-to-testing-phoneme-file -o path-to-save-model-file
+python train.py -x path-to-training-audio-feature-file, -X path-to-testing-audio-feature-file, -y path-to-training-viseme-file -Y path-to-testing-viseme-file -o path-to-save-model-file
 
 ```
 
