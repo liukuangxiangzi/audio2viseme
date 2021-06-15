@@ -57,7 +57,7 @@ def load_dataset(prefix=''):
 
 
 #set tensorboard
-#tensorboard --logdir /Users/liukuangxiangzi/PycharmProjects/PhonemeNet/logs/fit/ --host=127.0.0.1
+#tensorboard --logdir /Users/liukuangxiangzi/PycharmProjects/audio2viseme/logs/ --host=127.0.0.1
 log_dir = os.path.join(
     "logs",
     "fit",
