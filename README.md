@@ -1,17 +1,23 @@
 # audio2viseme
+
 The code generate visemes from audio features.
 
 ## Installation
 
-#### The project depends on the following Python packages:
+The code uses Python 3.8.2 and it was tested on Tensorflow 2.4.1.
+Install ffmpeg
+Clone the git project:
+```
+$ git clone https://github.com/liukuangxiangzi/audio2viseme.git
+```
+The requirements (including tensorflow) can be installed using:
+```
+pip install -r requirements.txt
+```
+## Data
+#### Data used to train 
 
-* Python--- 3.8.2
-* Keras --- 2.4.1
-* Tensorflow --- 2.4.1
-* Librosa --- 0.8.0
-* matplotlib
-* numpy
-* tqdm
+audio2viseme is trained on the 1st subject of The Grid Corpus, a audiovisual dataset with 47.2 minutes of audio captured at 25 fps and synchronized transcriptions that can be downloaded at [The GRID](http://spandh.dcs.shef.ac.uk/gridcorpus/). 
 
 
 ## Audio Feature Extraction
