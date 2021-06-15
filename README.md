@@ -17,7 +17,7 @@ pip install -r requirements.txt
 ## Data
 #### Data used to train 
 
-audio2viseme is trained on the 1st subject of The Grid Corpus, a audiovisual dataset with 47.2 minutes of audio captured at 25 fps and synchronized transcriptions that can be downloaded at [The GRID](http://spandh.dcs.shef.ac.uk/gridcorpus/). 
+audio2viseme is trained on the 1st subject of The Grid Corpus, with 47.2 minutes of audio captured at 25 fps and synchronized transcriptions that can be downloaded at [The GRID](http://spandh.dcs.shef.ac.uk/gridcorpus/). 
 
 
 ## Audio Feature Extraction
