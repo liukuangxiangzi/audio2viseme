@@ -1,5 +1,5 @@
 # audio2viseme
-The code generate viseme from audio features.
+The code generate visemes from audio features.
 
 ## Installation
 
