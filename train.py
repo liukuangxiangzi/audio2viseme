@@ -16,7 +16,7 @@ from keras.utils import plot_model
 
 
 
-#-x path-of-audio-feature-file-for-training, -X path-of-audio-feature-file-for-testing, -y path-of-viseme-file-for-training -Y path-of-phoneme-file-for-testing -o path-of-saving-model
+#-x path-of-audio-feature-file-for-training, -X path-of-audio-feature-file-for-testing, -y path-of-viseme-file-for-training -Y path-of-viseme-file-for-testing -o path-of-saving-model
 #e.g. python train.py -x data/audio_feature_train.npy -X data/audio_feature_test.npy -y data/train_viseme_label_13.npy -Y data/test_viseme_label_13.npy -o model/audio2pho_model_mfa13label_ep300_1e-4_32.h5
 
 
