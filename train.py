@@ -16,22 +16,22 @@ from keras.utils import plot_model
 
 
 
-#-x path-of-audio-feature-file-for-training, -X path-of-audio-feature-file-for-testing, -y path-of-phoneme-file-for-training -Y path-of-phoneme-file-for-testing -o path-of-saving-model
-#e.g. python train.py -x data/audio_feature_train.npy -X data/audio_feature_test.npy -y data/train_phoneme_label_13.npy -Y data/test_phoneme_label_13.npy -o model/audio2pho_model_mfa13label_ep300_1e-4_32.h5
+#-x path-of-audio-feature-file-for-training, -X path-of-audio-feature-file-for-testing, -y path-of-viseme-file-for-training -Y path-of-phoneme-file-for-testing -o path-of-saving-model
+#e.g. python train.py -x data/audio_feature_train.npy -X data/audio_feature_test.npy -y data/train_viseme_label_13.npy -Y data/test_viseme_label_13.npy -o model/audio2pho_model_mfa13label_ep300_1e-4_32.h5
 
 
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("-x", "--train_x", type=str, help="input audio feature file for training")
 parser.add_argument("-X", "--test_X", type=str, help="input audio feature file for testing")
-parser.add_argument("-y", "--train_y", type=str, help="input phoneme file for training")
-parser.add_argument("-Y", "--test_Y", type=str, help="input phoneme file for testing")
+parser.add_argument("-y", "--train_y", type=str, help="input viseme file for training")
+parser.add_argument("-Y", "--test_Y", type=str, help="input viseme file for testing")
 parser.add_argument("-o", "--out_fold", type=str, help="model folder")
 args = parser.parse_args()
 
 
 
 def labelcategorical():
-    label_train = np.array(np.load(args.train_y))  #train_phoneme_label14H.npy
+    label_train = np.array(np.load(args.train_y))  #train_viseme_label14H.npy
     label_test = np.array(np.load(args.test_Y))
 
     label_train = label_train.reshape(753,75,-1)
