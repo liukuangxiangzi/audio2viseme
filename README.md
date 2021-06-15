@@ -6,7 +6,7 @@ The code generate visemes from audio features.
 
 The code uses Python 3.8.2 and it was tested on Tensorflow 2.4.1.
 
-Install ffmpeg
+Install ffmpeg.
 
 Clone the git project:
 ```
