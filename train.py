@@ -4,7 +4,7 @@
 import os
 from datetime import datetime
 import numpy as np
-
+import argparse
 from keras.layers import Input, LSTM
 from keras.models import Model
 from keras.utils import to_categorical
@@ -13,7 +13,7 @@ from keras.layers import Dense
 from keras.layers import Dropout
 from keras.optimizers import *
 from keras.utils import plot_model
-import argparse
+
 
 
 #-x path-of-audio-feature-file-for-training, -X path-of-audio-feature-file-for-testing, -y path-of-phoneme-file-for-training -Y path-of-phoneme-file-for-testing -o path-of-saving-model
